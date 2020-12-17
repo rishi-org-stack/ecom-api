@@ -1,0 +1,45 @@
+features and routing
+
+types of classes
+
+1)user (denoting a common user)
+
+2)product (denoting a product in this case mobile phones)
+
+3)admin (denoting person wo can sold)
+
+routing
+
+1)/
+start
+2)"/signup/name/password/email"
+if person is already in database it will send a response "/login/name/password/email"
+else 
+it will insert user in db
+3)"/login/name/password/email"
+if user is in db 
+it will present a json format of resonce rrevealing its buying history
+else 
+it will send a response of 
+"/signup/name/password/email"
+4)"/admin/signup/name/password/email"
+if person is already in database it will send a response "/login/name/password/email"
+else 
+it will insert user in db
+5)"/admin/login/name/password/email"
+if user is in db 
+it will present a json format of resonce rrevealing its selling history history
+and Mis of total earning in that day uptill today and total left
+else 
+it will send a response of 
+"/admin/signup/name/password/email"
+
+6)/admin/name/password/email/model/product name/price/list
+using model,product name,price 
+it will build a product object and append it into admin listed product field and 
+in product db
+
+7)/admin/name/password/model/pname/price/buy/uname>/upas
+it will build a product object and pop it from admin listed product field and productdb
+also append it into user bhidtory
+and admin selling history

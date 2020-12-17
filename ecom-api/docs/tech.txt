@@ -1,0 +1,12 @@
+Tech stack's
+
+1)Python (for routing purpose )
+lib's
+i)Flask
+ii)pymongo
+iii)time
+iv)json
+2)mongodb(for storage)
+
+
+
